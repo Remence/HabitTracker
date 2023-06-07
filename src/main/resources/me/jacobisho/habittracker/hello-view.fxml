@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray; -fx-border-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.jacobisho.habittracker.HelloController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="65.0" prefWidth="313.0" style="-fx-font-family: serif;" text="HabitTracker Login">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="122.0" prefHeight="27.0" prefWidth="89.0" style="-fx-font-family: serif;" text="Username:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="171.0" layoutY="123.0" />
+      <Label layoutX="82.0" layoutY="169.0" prefHeight="27.0" prefWidth="89.0" style="-fx-font-family: serif;" text="Password:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="171.0" layoutY="170.0" />
+      <Button fx:id="loginButton" layoutX="82.0" layoutY="219.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Button fx:id="exitButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#logout" text="Exit" />
+      <DatePicker fx:id="datePicker" layoutX="14.0" layoutY="67.0" onAction="#getDate" promptText="Enter a date" />
+   </children>
+</AnchorPane>

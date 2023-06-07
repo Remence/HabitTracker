@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink; -fx-border-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.jacobisho.habittracker.Wednesday">
+    <children>
+        <Label layoutX="149.0" layoutY="14.0" style="-fx-font-family: serif;" text="WEDNESDAY" textAlignment="CENTER">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <TextField fx:id="wedFirstField" layoutX="53.0" layoutY="163.0" />
+        <TextField fx:id="wedSecondField" layoutX="226.0" layoutY="163.0" />
+        <TextField fx:id="wedThirdField" layoutX="401.0" layoutY="163.0" />
+        <TextField fx:id="wedFourthField" layoutX="128.0" layoutY="274.0" />
+        <TextField fx:id="wedFifthField" layoutX="327.0" layoutY="274.0" />
+        <Label fx:id="wedFirstLabel" layoutX="54.0" layoutY="147.0" prefHeight="14.0" prefWidth="149.0" style="-fx-font-family: serif;" text="First Habit" />
+        <Label fx:id="wedSecondLabel" layoutX="226.0" layoutY="147.0" prefHeight="14.0" prefWidth="107.0" style="-fx-font-family: serif;" text="Second Habit" />
+        <Label fx:id="wedFifthLabel" layoutX="326.0" layoutY="261.0" prefHeight="14.0" prefWidth="149.0" style="-fx-font-family: serif;" text="Fifth Habit" />
+        <Label fx:id="wedFourthLabel" layoutX="129.0" layoutY="261.0" prefHeight="14.0" prefWidth="149.0" style="-fx-font-family: serif;" text="Fourth Habit" />
+        <Label fx:id="wedThirdLabel" layoutX="403.0" layoutY="147.0" prefHeight="14.0" prefWidth="149.0" style="-fx-font-family: serif;" text="Third Habit" />
+        <ProgressBar layoutX="200.0" layoutY="68.0" prefWidth="200.0" progress="0.0" />
+        <CheckBox layoutX="88.0" layoutY="222.0" mnemonicParsing="false" text="Completed" />
+        <CheckBox layoutX="261.0" layoutY="222.0" mnemonicParsing="false" text="Completed" />
+        <CheckBox layoutX="436.0" layoutY="222.0" mnemonicParsing="false" text="Completed" />
+        <CheckBox layoutX="162.0" layoutY="330.0" mnemonicParsing="false" text="Completed" />
+        <CheckBox layoutX="366.0" layoutY="330.0" mnemonicParsing="false" text="Completed" />
+        <Button fx:id="backButton" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#back" text="Back" />
+        <Button fx:id="wedFirstSubmit" layoutX="102.0" layoutY="188.0" mnemonicParsing="false" onAction="#firstSubmit" text="Submit" />
+        <Button fx:id="wedFifthSubmit" layoutX="375.0" layoutY="299.0" mnemonicParsing="false" onAction="#fifthSubmit" text="Submit" />
+        <Button fx:id="wedFourthSubmit" layoutX="173.0" layoutY="299.0" mnemonicParsing="false" onAction="#fourthSubmit" text="Submit" />
+        <Button fx:id="wedThirdSubmit" layoutX="443.0" layoutY="188.0" mnemonicParsing="false" onAction="#thirdSubmit" text="Submit" />
+        <Button fx:id="wedSecondSubmit" layoutX="273.0" layoutY="188.0" mnemonicParsing="false" onAction="#secondSubmit" text="Submit" />
+    </children>
+</AnchorPane>
